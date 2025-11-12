@@ -45,7 +45,7 @@ if(*p == '\0'){
 return 0;
 }else{
 a = *p;
-return a + SunStringASCII(p+1);
+return a + SumStringASCII(p+1);
 }
 }
 void ReverseString(char *start, char *end){
