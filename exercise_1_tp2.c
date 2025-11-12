@@ -49,13 +49,11 @@ return a + SumStringASCII(p+1);
 }
 }
 void ReverseString(char *start, char *end){
-if(start == end){
-return;
-}else{
+if(start < end){
 char tmp = *start;
 *start = *end;
 *end = tmp;
-return ReverseString(start + 1, end - 1);
+ReverseString(start + 1, end - 1);
 }
 }
 int main() {
@@ -75,7 +73,8 @@ printf("\n Reversed array: ");
 DisplayArray(rev, len);
 int sum = SumStringASCII(str);
 printf("\n Sum of ASCII values (recursive): %d", SumStringASCII(str));
-printf("String reversed recursively: %s\n", str);
+ReverseString(str, str + len -2);
+printf("\nString reversed recursively: %s\n", str);
 free(str);
 return 0;
 }
