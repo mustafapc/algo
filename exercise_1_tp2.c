@@ -31,7 +31,14 @@ rev[n - a - 1] = arr[a];
 a++;
 }
 }
-void DisplayArray(char arr[], int n);
+void DisplayArray(char arr[], int n){
+int a = 0;
+while(a < n){
+printf("%c", arr[a]);
+a++;
+}
+printf("\n");
+}
 int SumStringASCII(char *p);
 void ReverseString(char *start, char *end);
 int main() {
