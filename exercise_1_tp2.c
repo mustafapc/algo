@@ -11,7 +11,7 @@ int StringLength(char *str){
     while( *(str + a) != '\0'){
         a++;
     }
-    a++;
+    
     return a;
 };
 void LoadArray(char *p, char arr[]){
@@ -73,7 +73,7 @@ printf("\n Reversed array: ");
 DisplayArray(rev, len);
 int sum = SumStringASCII(str);
 printf("\n Sum of ASCII values (recursive): %d", SumStringASCII(str));
-ReverseString(str, str + len -2);
+ReverseString(str, str + len -1);
 printf("\nString reversed recursively: %s\n", str);
 free(str);
 return 0;
