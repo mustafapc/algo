@@ -23,7 +23,7 @@ void LoadArray(char *p, char arr[]){
     }
 };
 void ReverseArray(char arr[], char rev[], int n){
-Int a = 0;
+int a = 0;
 int b = ((n % 2) == 1) ? ((n - 1) / 2) : (n/2);
 while(a < b){
 rev[a] = arr[n - a - 1];
@@ -74,7 +74,7 @@ ReverseArray(arr, rev, len);
 printf("\n Reversed array: ");
 DisplayArray(rev, len);
 int sum = SumStringASCII(str);
-printf("\n Sum of ASCII values (recursive): %d", SumStringASCII(str, str + len- 1));
+printf("\n Sum of ASCII values (recursive): %d", SumStringASCII(str));
 printf("String reversed recursively: %s\n", str);
 free(str);
 return 0;
