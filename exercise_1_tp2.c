@@ -22,7 +22,15 @@ void LoadArray(char *p, char arr[]){
         b++;
     }
 };
-void ReverseArray(char arr[], char rev[], int n);
+void ReverseArray(char arr[], char rev[], int n){
+Int a = 0;
+int b = ((n % 2) == 1) ? ((n - 1) / 2) : (n/2);
+while(a < b){
+rev[a] = arr[n - a - 1];
+rev[n - a - 1] = arr[a];
+a++;
+}
+}
 void DisplayArray(char arr[], int n);
 int SumStringASCII(char *p);
 void ReverseString(char *start, char *end);
