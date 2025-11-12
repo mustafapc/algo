@@ -24,10 +24,8 @@ void LoadArray(char *p, char arr[]){
 };
 void ReverseArray(char arr[], char rev[], int n){
 int a = 0;
-int b = ((n % 2) == 1) ? ((n - 1) / 2) : (n/2);
-while(a < b){
+while(a < n){
 rev[a] = arr[n - a - 1];
-rev[n - a - 1] = arr[a];
 a++;
 }
 }
