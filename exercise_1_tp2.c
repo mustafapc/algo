@@ -39,7 +39,15 @@ a++;
 }
 printf("\n");
 }
-int SumStringASCII(char *p);
+int SumStringASCII(char *p){
+int a;
+if(*p == '\0'){
+return 0;
+}else{
+a = *p;
+return a + SunStringASCII(p+1);
+}
+}
 void ReverseString(char *start, char *end);
 int main() {
 char *str;
