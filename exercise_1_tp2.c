@@ -48,7 +48,16 @@ a = *p;
 return a + SunStringASCII(p+1);
 }
 }
-void ReverseString(char *start, char *end);
+void ReverseString(char *start, char *end){
+if(start == end){
+return;
+}else{
+char tmp = *start;
+*start = *end;
+*end = tmp;
+return ReverseString(start + 1, end - 1);
+}
+}
 int main() {
 char *str;
 int n;
