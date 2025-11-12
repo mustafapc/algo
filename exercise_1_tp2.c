@@ -1,6 +1,6 @@
-#include< stdio.h >
-#include< string.h >
-#include< stdlib.h >
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
 char *LoadString(int N){
     char *name = (char *) malloc(sizeof(char) * N);
     fgets(name, N, stdin);
